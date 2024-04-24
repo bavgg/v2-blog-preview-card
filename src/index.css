@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: hsl(0, 0%, 7%);
+  --pure-white: hsl(0, 0%, 100%);
+  --yellow: hsl(47, 88%, 63%);
+  --grey: hsl(0, 0%, 50%);
+  --test: red;
+
+  --extra-bold: 800;
+  --medium: 500;
+
+  --line-height: 150%;
+
+  /* dynamic */
+
+  --font-sm: 12px; 
+  --font-md: 14px;
+  --font-lg: 20px;
+
+  --card-w: 327px;
+  --card-h: 501px;
+
+  --img-w: 279px;
+
+}
+
+body {
+  font-family: 'Figtree';
+  font-weight: 500;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* color: #333333; */
+
+}
+
+html {
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.border-card {
+  border: 1px solid var(--black);
+  border-radius: 20px;
+}
+
+.drop-shadow {
+  box-shadow: 8px 8px 0px black;
+}
+
+.drop-shadow:active {
+  box-shadow: 16px 16px 0px black;
+
+  
+}
+
+.peer-hover:active > div > h1 {
+  color: var(--yellow);
+}
+
+@media (min-width: 375px) {
+  main {
+    --img-w: 336px;
+
+    --font-sm: 14px; 
+    --font-md: 16px;
+    --font-lg: 24px;
+
+    --card-w: 384px;
+    --card-h: 522px;
+
+  }
+}
+
+.img-w {
+  width: clamp(279px, 73vw, 336px);
+}
+
+.card-w {
+  width: clamp(327px, 85vw, 384px);
+}
+.text-small {
+  /* font-size: var(--font-sm); */
+  font-size: clamp(12px, 3vw, 14px);
+}
+.text-medium {
+  /* font-size: var(--font-md); */
+  font-size: clamp(14px, 3.7vw, 16px);
+}
+.text-large {
+  /* font-size: var(--font-lg); */
+  font-size: clamp(20px, 5.2vw, 24px);
+}
+
+
+
