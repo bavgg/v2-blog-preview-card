@@ -35,7 +35,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: https://bavgg.github.io/blog-preview-card/
+- Live Site URL: https://bavgg.github.io/v2-blog-preview-card/
 
 ## My process
 
@@ -51,11 +51,11 @@ Users should be able to:
 
 ### What I learned
 
-Some CSS Variables and Media Queries.
+CSS responsive design using clamp function.
 
 ### Continued development
 
-I'm interested in learning more about responsive design for complex layouts, such as responsive tables and multi-column designs.
+I'm interested in learning more about responsive design for complex layouts.
 
 
 ## Author
